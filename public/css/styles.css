@@ -1,0 +1,39 @@
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.vertical-center {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 6px 0;
+}
+
+.h-color {
+    color: white;
+}
+
+#c1 {
+    position: fixed;
+    /* or absolute */
+    top: 10%;
+    left: 43%;
+}
+
+.messages p {
+    margin: 6px 0;
+}
+
+.well {
+    margin-top: 35px;
+}

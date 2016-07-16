@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title= title
+    link(href='/stylesheets/bootstrap.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+   .container
+    img.logo(src='/images/naturelogo5.png')
+    nav
+     ul
+        li
+         a(href='/') Home
+        li
+         a(href='/index2.html') Gallery
+        li
+         a(href='/chat1.html') Chat
+        li
+         a(href='/blog') Blog
+        li
+         a(href='/posts/add') Add Post
+        li
+         a(href='/categories/add') Add Category
+      if user
+        li(class=(title == 'Members' ? 'active' : ''))
+          a(href='/') Members
+      if !user  
+        li(class=(title == 'Register' ? 'active' : ''))
+          a(href='/users/register') Register
+        li(class=(title == 'Login' ? 'active' : ''))
+          a(href='/users/login') Login
+      if user
+        li
+          a(href='/users/logout') Logout
+  .container
+      != messages()
+      block content
+        footer
+         p WildernessBlog &copy; 2016
+
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='js/bootstrap.min.js')

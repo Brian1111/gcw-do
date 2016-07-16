@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <link rel="icon" href="img/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <img src="img/background2-1536.jpg" id="bg" alt="">
+</head>
+
+<body>
+    <!--==============================header=================================-->
+    <header id="header">
+        <div class="menuheader">
+            <div class="container">
+                <nav class="navbar navbar-default navbar-static-top tm_navbar" role="navigation">
+                    <ul class="nav sf-menu">
+                        <li><a href="index.html">home</a>
+                            <ul>
+                                <li><img src="img/arrowup.png" alt=""><a href="#">info</a></li>
+                                <li><a href="#">profile</a></li>
+                                <li><a class="last" href="#">news</a>
+                                    <ul>
+                                        <li><a href="#">fresh</a></li>
+                                        <li><a class="last" href="#">archive</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="index2.html">gallery</a></li>
+                        <li><a href="chat1.html">chat</a></li>
+                        <li><a href="/blog">blog</a></li>   
+                        <li><a href="/blog">  login and registration</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--===============================================================-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 well">
+                <a href="/chat1.html">Change Settings</a>
+                <h1 class="room-title text-center"> <!-- Room name (use jQuery) --> </h1>
+                <ul class="messages list-group">
+                    <!-- Messages end up here! -->
+                </ul>
+                <form id="message-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-comment"></i>
+              </span>
+                            <input type="text" name="message" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-default btn-block">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-2.2.3.min.js"></script>
+    <script src="/js/socket.io-1.4.5.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/QueryParams.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
